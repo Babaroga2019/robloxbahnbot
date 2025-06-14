@@ -2,9 +2,22 @@ import discord
 from discord.ext import commands
 import os
 import json
-from dotenv import load_dotenv  # <- hinzugefügt
+from dotenv import load_dotenv
+import threading
+from fastapi import FastAPI
+import uvicorn
 
-load_dotenv()  # <- lädt die Umgebungsvariablen aus der .env-Datei
+load_dotenv()  # Lädt Umgebungsvariablen aus .env
+
+# FastAPI-Webserver starten
+app = FastAPI()
+
+@app.get("/")
+async def root():
+    return {"status": "Bot is alive!"}
+
+def run_api():
+    uvicorn.run(app, host="0.0.0.0", port=8000)
 
 # Lade die gespeicherten Infos
 def load_info_data():
@@ -58,4 +71,8 @@ class MyBot(commands.Bot):
         await self.load_extension("cogs.application_system")
 
 bot = MyBot()
-bot.run(os.getenv("DISCORD_TOKEN"))  # <- ersetzt festen Token durch Umgebungsvariable
+
+# Starte den FastAPI-Webserver in einem separaten Thread
+threading.Thread(target=run_api, daemon=True).start()
+
+bot.run(os.getenv("DISCORD_TOKEN"))
