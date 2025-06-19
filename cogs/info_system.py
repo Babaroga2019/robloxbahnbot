@@ -67,7 +67,7 @@ class InfoSystem(commands.Cog):
 
             embed.set_footer(
                 text="⚠️ Verstöße gegen diese Regeln führen zu Verwarnungen, Mutes, Kicks oder einem Bann.",
-                icon_url="https://cdn.discordapp.com/emojis/123456789012345678.png?size=64"
+                icon_url="https://cdn.discordapp.com/attachments/1359491782483644577/1385288205405782036/logoneu.png?ex=685585ad&is=6854342d&hm=fe3d8e34eb208ba736d8e9fe2b03b85e390169978d88ce3bd981497cc24df5be&"
             )
 
             embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/1359491782483644577/1381557068346949683/ChatGPT_Image_9._Juni_2025_10_02_10.png?ex=6847f2c9&is=6846a149&hm=b1c7720691e7c81cc52a982b2ff34d885f4f4779383749460a7e6f30791236cc&")
@@ -109,7 +109,7 @@ class InfoSystem(commands.Cog):
                 icon_url="https://cdn.discordapp.com/emojis/123456789012345678.png?size=64"
             )
 
-            embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/1359491782483644577/1381557068346949683/ChatGPT_Image_9._Juni_2025_10_02_10.png?ex=6847f2c9&is=6846a149&hm=b1c7720691e7c81cc52a982b2ff34d885f4f4779383749460a7e6f30791236cc&") 
+            embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/1359491782483644577/1385288205405782036/logoneu.png?ex=685585ad&is=6854342d&hm=fe3d8e34eb208ba736d8e9fe2b03b85e390169978d88ce3bd981497cc24df5be&") 
 
             return embed
         elif name == "roblox-bahn":
@@ -148,7 +148,7 @@ class InfoSystem(commands.Cog):
                 icon_url="https://cdn.discordapp.com/emojis/123456789012345678.png?size=64"
             )
 
-            embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/1359491782483644577/1381557068346949683/ChatGPT_Image_9._Juni_2025_10_02_10.png?ex=6847f2c9&is=6846a149&hm=b1c7720691e7c81cc52a982b2ff34d885f4f4779383749460a7e6f30791236cc&") 
+            embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/1359491782483644577/1385288205405782036/logoneu.png?ex=685585ad&is=6854342d&hm=fe3d8e34eb208ba736d8e9fe2b03b85e390169978d88ce3bd981497cc24df5be&") 
 
             return embed
         elif name == "bewerben":
@@ -181,7 +181,7 @@ class InfoSystem(commands.Cog):
                 icon_url="https://cdn.discordapp.com/emojis/123456789012345678.png?size=64"
             )
 
-            embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/1359491782483644577/1381557068346949683/ChatGPT_Image_9._Juni_2025_10_02_10.png?ex=6847f2c9&is=6846a149&hm=b1c7720691e7c81cc52a982b2ff34d885f4f4779383749460a7e6f30791236cc&")
+            embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/1359491782483644577/1385288205405782036/logoneu.png?ex=685585ad&is=6854342d&hm=fe3d8e34eb208ba736d8e9fe2b03b85e390169978d88ce3bd981497cc24df5be&")
 
             return embed
         else:
