@@ -69,6 +69,7 @@ class MyBot(commands.Bot):
         await self.load_extension("cogs.info_system")
         await self.load_extension("cogs.announcement")
         await self.load_extension("cogs.application_system")
+        await self.load_extension("cogs.autorole")
 
 bot = MyBot()
 
